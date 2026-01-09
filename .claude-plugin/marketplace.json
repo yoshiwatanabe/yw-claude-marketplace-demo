@@ -1,0 +1,15 @@
+{
+  "name": "twatana-private",
+  "description": "[DEMO] Claude Extensibility Demo Collection - Hello World examples for all features",
+  "owner": {
+    "name": "Yoshi Watanabe",
+    "email": "twatana@microsoft.com"
+  },
+  "plugins": [
+    {
+      "name": "demo-skills",
+      "source": "./plugins/demo-skills",
+      "description": "[DEMO] Skill patterns: minimal, references, scripts, assets"
+    }
+  ]
+}
