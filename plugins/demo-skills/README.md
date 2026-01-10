@@ -33,7 +33,7 @@ Skills are knowledge files that Claude can discover and load on-demand. They use
 
 1. **Install the plugin**
    ```bash
-   /plugin install demo-skills@twatana-private
+   /plugin install demo-skills@twatana-marketplace-demo
    ```
 
 2. **Test auto-trigger**

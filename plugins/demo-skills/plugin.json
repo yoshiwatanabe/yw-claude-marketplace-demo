@@ -1,7 +1,5 @@
 {
   "name": "demo-skills",
   "version": "1.0.0",
-  "description": "[DEMO] Skill patterns: minimal, references, scripts, assets",
-  "author": "Yoshi Watanabe",
-  "repository": "https://microsoft.ghe.com/twatana/twatana-msft-private"
+  "description": "[DEMO] Skill patterns: minimal, references, scripts, assets"
 }
