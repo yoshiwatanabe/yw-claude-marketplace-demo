@@ -1,3 +1,8 @@
+---
+name: skill-with-assets
+description: Demonstrates how skills can bundle data files and configuration templates. Use when needing structured data, templates, configuration files, or static reference data.
+---
+
 # Skill with Assets
 
 **Description:** Demonstrates how skills can bundle data files and configuration templates.

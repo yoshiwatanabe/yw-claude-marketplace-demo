@@ -1,3 +1,8 @@
+---
+name: minimal-skill
+description: A minimal demonstration skill showing the simplest possible skill structure with no references, scripts, or assets.
+---
+
 # Minimal Skill
 
 **Description:** A minimal demonstration skill showing the simplest possible skill structure.

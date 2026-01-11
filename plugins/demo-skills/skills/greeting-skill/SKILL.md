@@ -1,3 +1,8 @@
+---
+name: greeting-skill
+description: Auto-triggered skill that responds warmly when users greet the assistant. Activates when user says hello, hi, hey, greetings, good morning, good afternoon, or good evening.
+---
+
 # Greeting Skill
 
 **Description:** Auto-triggered skill that responds warmly when users greet the assistant.

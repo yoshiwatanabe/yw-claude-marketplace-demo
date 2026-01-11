@@ -1,3 +1,8 @@
+---
+name: skill-with-references
+description: Demonstrates progressive disclosure by loading reference documentation on demand. Shows how skills can include additional detailed documentation without loading everything upfront.
+---
+
 # Skill with References
 
 **Description:** Demonstrates progressive disclosure by loading reference documentation on demand.
