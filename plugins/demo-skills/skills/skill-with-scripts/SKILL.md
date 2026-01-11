@@ -1,3 +1,8 @@
+---
+name: skill-with-scripts
+description: Demonstrates how skills can include executable scripts for automation, calculations, transformations, or system interactions. Use when needing to execute Python, Bash, Node.js, or other scripts.
+---
+
 # Skill with Scripts
 
 **Description:** Demonstrates how skills can include executable scripts for automation.
