@@ -1,7 +1,7 @@
 # Claude Plugin Marketplace Demo - Implementation Plan
 
-> **Repository:** `claude-marketplace-demo` (Enterprise GitHub)  
-> **What This Demonstrates:** How to build and publish a plugin marketplace  
+> **Repository:** `yw-claude-marketplace-demo` (GitHub)  
+> **What This Demonstrates:** A working Claude marketplace package: structure + metadata layout + live extensibility components (e.g., Claude Skills)  
 > **Purpose:** "Hello World" demos for every Claude extensibility feature  
 > **Key Concept:** ONE marketplace repository delivers MULTIPLE plugins  
 > **Goal:** Breadth over depth - low-cognitive-load samples for hands-on learning & future reference  
@@ -23,19 +23,19 @@ This repo demonstrates **how the marketplace packaging mechanism works**:
 
 ```bash
 # Add this marketplace (from Claude Code)
-/plugin marketplace add https://microsoft.ghe.com/twatana/claude-marketplace-demo.git
+/plugin marketplace add https://github.com/yoshiwatanabe/yw-claude-marketplace-demo.git
 
 # List available demo plugins
 /plugin
 
 # Install a specific demo plugin
-/plugin install demo-skills@twatana-marketplace-demo
+/plugin install demo-skills@yw-claude-marketplace-demo
 ```
 
 ### Repository Structure
 
 ```
-clande-marketplace-demo/
+yw-claude-marketplace-demo/
 ├── .claude-plugin/
 │   └── marketplace.json          # Marketplace definition (lists all demo plugins)
 ├── DEMO-PLAN.md                   # This file
@@ -100,7 +100,7 @@ clande-marketplace-demo/
 ## Plugin 01: demo-claudemd - CLAUDE.md Patterns
 
 **Feature:** Project-scoped always-on context  
-**Install:** `/plugin install demo-claudemd@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-claudemd@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐ Very Low
 
 > ⚠️ **Note:** CLAUDE.md itself can't be distributed via plugin (it's a project file).  
@@ -146,7 +146,7 @@ plugins/demo-claudemd/
 ## Plugin 02: demo-skills - Skills Examples
 
 **Feature:** Progressive-disclosure knowledge files  
-**Install:** `/plugin install demo-skills@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-skills@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐⭐ Low
 
 ### Plugin Structure
@@ -194,7 +194,7 @@ plugins/demo-skills/
 ## Plugin 03: demo-mcp - MCP Server Examples
 
 **Feature:** Model Context Protocol for tool integration  
-**Install:** `/plugin install demo-mcp@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-mcp@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐⭐⭐ Medium
 
 ### Plugin Structure
@@ -269,7 +269,7 @@ plugins/demo-mcp/
 ## Plugin 04: demo-commands - Slash Commands
 
 **Feature:** User-triggered saved prompts  
-**Install:** `/plugin install demo-commands@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-commands@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐ Very Low
 
 ### Plugin Structure
@@ -330,7 +330,7 @@ Summarize the current project:
 ## Plugin 05: demo-subagents - Subagent Examples
 
 **Feature:** Isolated agents with separate context  
-**Install:** `/plugin install demo-subagents@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-subagents@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐⭐ Low
 
 ### Plugin Structure
@@ -401,7 +401,7 @@ Keep answers concise and efficient.
 ## Plugin 06: demo-hooks - Event-Driven Automation
 
 **Feature:** Deterministic shell commands on lifecycle events  
-**Install:** `/plugin install demo-hooks@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-hooks@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐⭐⭐ Medium
 
 ### Plugin Structure
@@ -476,7 +476,7 @@ plugins/demo-hooks/
 ## Plugin 07: demo-full-plugin - Complete Example
 
 **Feature:** All components bundled together  
-**Install:** `/plugin install demo-full-plugin@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-full-plugin@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐⭐⭐ Medium
 
 ### Plugin Structure
@@ -522,7 +522,7 @@ plugins/demo-full-plugin/
 ## Plugin 08: demo-thinking - Extended Thinking
 
 **Feature:** Give Claude more compute time  
-**Install:** `/plugin install demo-thinking@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-thinking@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐ Very Low
 
 ### Plugin Structure
@@ -553,7 +553,7 @@ plugins/demo-thinking/
 ## Plugin 10: demo-settings - Configuration Patterns
 
 **Feature:** Project/user/plugin settings  
-**Install:** `/plugin install demo-settings@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-settings@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐⭐ Low
 
 ### Plugin Structure
@@ -582,7 +582,7 @@ plugins/demo-settings/
 ## Plugin 11: demo-model-routing - LiteLLM Integration
 
 **Feature:** Use different LLMs with Claude Code  
-**Install:** `/plugin install demo-model-routing@twatana-marketplace-demo`  
+**Install:** `/plugin install demo-model-routing@yw-claude-marketplace-demo`  
 **Cognitive Load:** ⭐⭐⭐ Medium
 
 ### Plugin Structure
@@ -679,11 +679,11 @@ standalone/user-level/
 
 ```json
 {
-  "name": "twatana-marketplace-demo",
-  "description": "Claude Extensibility Demo Collection - Hello World examples for all features",
+  "name": "yw-claude-marketplace-demo",
+  "description": "[DEMO] Claude marketplace package showing working structure, metadata layout, and live Claude Skills",
   "owner": {
-    "name": "Takashi Watanabe",
-    "email": "twatana@microsoft.com"
+    "name": "Yoshi Watanabe",
+    "email": "yoshiwatanabe@users.noreply.github.com"
   },
   "plugins": [
     {
@@ -801,7 +801,7 @@ standalone/user-level/
 ### Step 1: Create the marketplace structure
 
 ```bash
-cd claude-marketplace-demo
+cd yw-claude-marketplace-demo
 
 # Create marketplace directory
 mkdir -p .claude-plugin
@@ -825,13 +825,13 @@ Start with `demo-skills` - it's the most fundamental.
 
 ```bash
 # In Claude Code (WSL)
-/plugin marketplace add https://microsoft.ghe.com/twatana/claude-marketplace-demo.git
+/plugin marketplace add https://github.com/yoshiwatanabe/yw-claude-marketplace-demo.git
 
 # List available plugins
 /plugin
 
 # Install a demo
-/plugin install demo-skills@twatana-marketplace-demo
+/plugin install demo-skills@yw-claude-marketplace-demo
 ```
 
 ---
@@ -844,21 +844,21 @@ Start with `demo-skills` - it's the most fundamental.
 ### 2. README.md (Root)
 
 ```markdown
-# twatana-marketplace-demo - Claude Extensibility Demo Collection
+# yw-claude-marketplace-demo - Claude Marketplace Package Demo
 
-> Demo marketplace for learning Claude Code extensibility features
+> Claude marketplace (package) demo showing structure, metadata layout, and live Claude extensibility components (e.g., Claude Skills)
 
 ## Installation
 
 \`\`\`bash
 # Add this marketplace
-/plugin marketplace add https://microsoft.ghe.com/twatana/claude-marketplace-demo.git
+/plugin marketplace add https://github.com/yoshiwatanabe/yw-claude-marketplace-demo.git
 
 # List available demo plugins
 /plugin
 
 # Install any demo
-/plugin install demo-skills@twatana-marketplace-demo
+/plugin install demo-skills@yw-claude-marketplace-demo
 \`\`\`
 
 ## Available Demos

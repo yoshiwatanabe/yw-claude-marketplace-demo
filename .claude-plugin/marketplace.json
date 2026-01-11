@@ -1,9 +1,9 @@
 {
-  "name": "tw-claude-marketplace-demo",
-  "description": "[DEMO] Claude Extensibility Demo Collection - Hello World examples for all features",
+  "name": "yw-claude-marketplace-demo",
+  "description": "[DEMO] Claude marketplace package showing working structure, metadata layout, and live Claude Skills",
   "owner": {
     "name": "Yoshi Watanabe",
-    "email": "twatana@microsoft.com"
+    "email": "yoshiwatanabe@users.noreply.github.com"
   },
   "plugins": [
     {

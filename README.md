@@ -1,8 +1,8 @@
-# twatana-marketplace-demo - Claude Plugin Marketplace Demo
+# yw-claude-marketplace-demo - Claude Marketplace Package Demo
 
-> **This is a MARKETPLACE demo** - demonstrates how to package and distribute multiple Claude plugins through a single repository.
+> **This is a CLAUDE MARKETPLACE (package) demo** - a working marketplace package that shows the folder structure, metadata layout, and live Claude extensibility components (e.g., Claude Skills).
 >
-> Learn how the marketplace mechanism works by seeing 10+ demo plugins in action.
+> Learn the marketplace packaging mechanism by seeing 10+ demo plugins in action.
 
 ## What Is This?
 
@@ -16,14 +16,14 @@ This repository demonstrates **Claude's plugin marketplace mechanism**:
 
 ```bash
 # Step 1: Add this marketplace (one time)
-/plugin marketplace add https://microsoft.ghe.com/twatana/claude-marketplace-demo.git
+/plugin marketplace add https://github.com/yoshiwatanabe/yw-claude-marketplace-demo.git
 
 # Step 2: List available plugins from this marketplace
 /plugin
 
 # Step 3: Install any individual demo plugin
-/plugin install demo-skills@twatana-marketplace-demo
-/plugin install demo-mcp@twatana-marketplace-demo
+/plugin install demo-skills@yw-claude-marketplace-demo
+/plugin install demo-mcp@yw-claude-marketplace-demo
 ```
 
 ## Available Demos
