@@ -10,6 +10,11 @@
       "name": "demo-skills",
       "source": "./plugins/demo-skills",
       "description": "[DEMO] Skill patterns: minimal, references, scripts, assets"
+    },
+    {
+      "name": "demo-commands",
+      "source": "./plugins/demo-commands",
+      "description": "[DEMO] Slash command patterns: simple, arguments, workflows"
     }
   ]
 }
