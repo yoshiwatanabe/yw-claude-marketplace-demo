@@ -1,72 +1,42 @@
-# yw-claude-marketplace-demo - Claude Marketplace Package Demo
+# yw-claude-marketplace-demo
 
-> **This is a CLAUDE MARKETPLACE (package) demo** - a working marketplace package that shows the folder structure, metadata layout, and live Claude extensibility components (e.g., Claude Skills).
->
-> Learn the marketplace packaging mechanism by seeing 10+ demo plugins in action.
+> A **Claude Marketplace** — a working example of how to package and distribute plugins for Anthropic's Claude Code.
 
 ## What Is This?
 
-This repository demonstrates **Claude's plugin marketplace mechanism**:
-- One repo = Multiple plugins
-- `.claude-plugin/marketplace.json` lists all available plugins
-- Users add the marketplace once, then install individual plugins
-- Each plugin in `plugins/` directory is independently installable
+This is a **marketplace repository** that demonstrates Anthropic Claude's plugin extensibility system. It contains a collection of low-cognitive-load examples and demos showcasing various Claude extensibility features.
 
-## Installation
+### Key Intent
+
+- **Educational focus**: Each demo is intentionally minimal to illustrate ONE concept clearly
+- **Hands-on learning**: Copy, modify, and adapt examples to understand Claude extensibility
+- **Extensibility showcase**: Demonstrates core Claude extension mechanisms like Skills, MCP Servers, CLAUDE.md, Slash Commands, Subagents, Hooks, and more
+
+## ⚠️ Important Platform Limitations
+
+**This marketplace is designed exclusively for Claude Code** (Anthropic's Claude environment). 
+
+- ✅ Works with: Claude Code (Claude IDE)
+- ❌ Does NOT work with: GitHub Copilot in VS Code, or other third-party AI environments
+- ❌ Cannot be imported as a standard VS Code extension marketplace
+
+The plugin mechanism described here is specific to Anthropic's Claude platform and cannot be ported to other environments.
+
+## Installation (Claude Code)
 
 ```bash
-# Step 1: Add this marketplace (one time)
+# Step 1: Add this marketplace
 /plugin marketplace add https://github.com/yoshiwatanabe/yw-claude-marketplace-demo.git
 
-# Step 2: List available plugins from this marketplace
+# Step 2: Browse available demo plugins
 /plugin
 
-# Step 3: Install any individual demo plugin
-/plugin install demo-skills@yw-claude-marketplace-demo
-/plugin install demo-mcp@yw-claude-marketplace-demo
+# Step 3: Install a specific demo plugin
+/plugin install <plugin-name>@yw-claude-marketplace-demo
 ```
 
-## Available Demos
+## Plugin Catalog
 
-| Plugin | Feature | Description |
-|--------|---------|-------------|
-| demo-skills | Skills | Auto-triggered workflows |
-| demo-mcp | MCP Servers | External tool integration |
-| demo-commands | Slash Commands | Manual shortcuts |
-| demo-subagents | Subagents | Specialized agents |
-| demo-hooks | Hooks | Event-driven automation |
-| demo-claudemd | CLAUDE.md | Project context templates |
-| demo-full-plugin | Complete | All components together |
-| demo-thinking | Extended Thinking | Compute time triggers |
-| demo-settings | Settings | Configuration patterns |
-| demo-model-routing | Model Routing | LiteLLM integration |
+A detailed catalog of available plugins, features, and installation instructions will be published here as more content is added to this repository.
 
-## Purpose
-
-Low-cognitive-load "hello world" demos for hands-on learning.
-Each plugin demonstrates ONE extensibility feature with minimal complexity.
-
-## Quick Reference
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                    CLAUDE EXTENSIBILITY                          │
-├──────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  CLAUDE.md      → Always-on context (project constitution)      │
-│  Skills         → Auto-triggered workflows (.claude/skills/)    │
-│  MCP Servers    → External tools/data (.mcp.json)               │
-│  Slash Commands → Manual prompts (.claude/commands/)            │
-│  Subagents      → Isolated agents (.claude/agents/)             │
-│  Hooks          → Event automation (.claude/settings.json)      │
-│  Plugins        → Bundle everything (.claude-plugin/)           │
-│                                                                  │
-├──────────────────────────────────────────────────────────────────┤
-│  Extended Thinking → "think" / "think hard" / "ultrathink"      │
-│  Headless Mode     → claude -p "prompt" --print                 │
-│  Model Routing     → LiteLLM / ANTHROPIC_BASE_URL               │
-│  VS Code MCP       → settings.json > mcp.servers                │
-└──────────────────────────────────────────────────────────────────┘
-```
-
-See [DEMO-PLAN.md](DEMO-PLAN.md) for full implementation details.
+In the meantime, see the [plugins/](plugins/) directory for available examples.
