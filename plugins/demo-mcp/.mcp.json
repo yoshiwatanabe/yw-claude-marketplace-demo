@@ -1,16 +1,22 @@
 {
   "mcpServers": {
     "echo": {
-      "command": "python",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/servers/echo-server/run.py"]
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/.claude/mcp/servers/echo-server/run.py"
+      ]
     },
     "calculator": {
-      "command": "python",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/servers/calculator-server/run.py"]
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/.claude/mcp/servers/calculator-server/run.py"
+      ]
     },
     "weather": {
-      "command": "python",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/servers/weather-server/run.py"]
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/.claude/mcp/servers/weather-server/run.py"
+      ]
     }
   }
 }
