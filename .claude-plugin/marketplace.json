@@ -15,6 +15,11 @@
       "name": "demo-commands",
       "source": "./plugins/demo-commands",
       "description": "[DEMO] Slash command patterns: simple, arguments, workflows"
+    },
+    {
+      "name": "demo-mcp",
+      "source": "./plugins/demo-mcp",
+      "description": "[DEMO] MCP server patterns: minimal, multiple tools, external API"
     }
   ]
 }
