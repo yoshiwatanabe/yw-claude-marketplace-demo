@@ -3,19 +3,19 @@
     "echo": {
       "command": "python3",
       "args": [
-        "${CLAUDE_PLUGIN_ROOT}/.claude/mcp/servers/echo-server/run.py"
+        "${CLAUDE_PLUGIN_ROOT}/servers/echo-server/run.py"
       ]
     },
     "calculator": {
       "command": "python3",
       "args": [
-        "${CLAUDE_PLUGIN_ROOT}/.claude/mcp/servers/calculator-server/run.py"
+        "${CLAUDE_PLUGIN_ROOT}/servers/calculator-server/run.py"
       ]
     },
     "weather": {
       "command": "python3",
       "args": [
-        "${CLAUDE_PLUGIN_ROOT}/.claude/mcp/servers/weather-server/run.py"
+        "${CLAUDE_PLUGIN_ROOT}/servers/weather-server/run.py"
       ]
     }
   }
